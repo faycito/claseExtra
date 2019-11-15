@@ -1,0 +1,79 @@
+.container{
+    h1{
+        text-align: center;
+    }
+    padding: 24px;
+    label{
+        font-size: 2em;
+        font-weight: bold;
+    }
+
+    .content{
+        padding: 24px;
+        display: flex;
+        flex-flow: row;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .card{
+        margin-right: 24px;
+        border: 1px solid #DDD;
+        display: flex;
+        flex-flow: column;
+        width: 360px;
+        padding-bottom: 12px;
+        box-shadow: 0 5px 5px #26323855 ;
+        /* padding: 12px; */
+        height: auto;
+        border-radius: 8px;
+
+        label{
+            background-color: rgb(50, 205, 252);
+            margin:0 0 12px 0;
+            text-align: center;
+            display: block;
+            border-top-right-radius: 8px;
+            border-top-left-radius: 8px;
+            padding:8px;
+            color:white;
+        }
+        .row{
+            display: flex;
+            flex-flow: row;
+            overflow-wrap: break-word;
+            
+            .curso{
+                border-right: 1px solid grey;
+            }
+            .nota{
+            }
+            .curso, .nota{
+                flex:1;
+                text-align: center;
+            }
+
+            .cell-title{
+                width: 50%; text-align: center; 
+                border-bottom: 1px solid grey; 
+                font-size: 32px; 
+                overflow-wrap: break-word;
+                &:nth-child(1){
+                    border-right: 1px solid grey;
+                }
+                
+                
+            }
+            
+            
+        }
+        .column{
+            display: flex;
+            flex-flow: column;
+            flex:1
+        }
+        .cell{
+            flex:1;
+        }
+    }
+}
